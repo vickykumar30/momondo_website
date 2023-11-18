@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* nav section */
+.bg-primary2 {
+  background-color: #21033A;
+}
+
+.top-20 {
+  top: 20%;
+}
+
+.nav-item .nav-link:hover{
+  background-color: #DC3545;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* nav section end */
+
+/* banner section */
+.banner {
+  width: 100%;
+  height: 550px;
+  background: url(../images/background.jpg);
+  background-size: 100% 100%;
+}
+
+
+#nav-tabs {
+  border-bottom: 0;
+
+}
+
+#nav-tabs button:hover {
+  background-color: #DC3545;
+}
+
+
+
+/* banner section end */
+/* fun start */
+
+.fun {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6))
+}
+
+.box {
+  transition: all 0.3s;
+}
+
+.box:hover {
+  transform: scale(1.15);
+  background-color: #DC3545;
+  cursor: pointer;
+}
+
+/* fun end */
+
+/* media qwery */
+
+@media screen and (min-width:992px) {
+  #searchbtn {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    bottom: 7%;
+    right: 0%;
+  }
+
+
+
+}
+
+@media screen and (max-width:576px) {
+  .top-20 {
+    top: 10%;
+  }
+
+  #searchbtn {
+    width: 100%;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .btn-nav {
+    width: 80px;
+    font-size: 10px;
+    margin: 0 aoto;
+  }
+}
+
+/* newsletter start */
+
+.news-letters {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/airplane.jpg);
+  background-size: cover;
+  background-position: center;
+  /* height: 300px; */
+}
+
+/* newsletter end */
+
+/* destination section start */
+
+.text-orange {
+  color: #ffa500;
+}
+
+.card p {
+  font-size: 14px;
+  margin: 0px;
+  line-height: 25px;
+}
+
+hr {
+  height: 3px;
+  background: #000;
+  width: 40px;
+  border: 0;
+}
+
+.card {
+  transition: all 0.3s;
+}
+
+.card:hover {
+  transform: scale(.95);
+  background-color: #DC3545;
+  cursor: pointer;
+}
+
+/* destination section end */

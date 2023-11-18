@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momondo - Traveling website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-primary2">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.png" width="180px" alt="" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active text-danger fw-bold" aria-current="page" href="#">Flight</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Hotel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-light" href="#">Car Hire</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-light" href="#">Trip Finder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-light" href="#">inpirations</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex ms-auto" role="search">
+                    <img src="assets/images/IMG-20231012-WA0001.jpg" width="20px" height="20px" alt="">
+                    <a class="nav-link dropdown-toggle ms-2  text-light" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        English(GBP)
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+
+                    <a class="nav-link fw-bold text-warning " href="#">Log In</a>
+
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- section banner start -->
+    <section class="banner position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 col-lg-7  ms-1 position-absolute top-20">
+                    <h2 class="display-5"> " The best place to find <br>the cheapest airfares "</h2>
+
+                    <p class="fw-bold fs-1 mt-4">
+                        - every single time
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div
+                    class=" col-11 col-sm-9 col-md-10  position-absolute bottom-0 mb-4 ms-3 ms-sm-0 bg-primary rounded py-2  w-80 ">
+                    <nav class="mb-2">
+                        <div class="nav nav-tabs" id="nav-tabs" role="tablist">
+                            <button class="nav-link active rounded-0 bg-danger text-white border-0 btn-nav"
+                                id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
+                                role="tab" aria-controls="nav-home" aria-selected="true">
+                                <i class="fa-solid fa-plane-departure"></i> Flights
+                            </button>
+                            <button class="nav-link rounded-0 text-white border-0 mx-1 btn-nav" id="nav-profile-tab"
+                                data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab"
+                                aria-controls="nav-profile" aria-selected="false">
+                                <i class="fa-solid fa-hotel"></i> Hotels
+                            </button>
+                            <button class="nav-link rounded-0 text-white rounded-0 border-0 btn-nav"
+                                id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button"
+                                role="tab" aria-controls="nav-contact" aria-selected="false">
+                                <i class="fa-solid fa-car"></i> Cars
+                            </button>
+
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab" tabindex="0">
+                            <!-- flight book form -->
+                            <div class="row g-1 mt-2">
+                                <div class="col-sm-6 col-lg-2">
+                                    <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                                    <select class="form-select" id="autoSizingSelect">
+                                        <option selected>Enter origin City</option>
+                                        <option value="1">Pune</option>
+                                        <option value="2">Delhi</option>
+                                        <option value="3">Bangluru</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-sm-6 col-lg-2">
+                                    <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                                    <select class="form-select" id="autoSizingSelect">
+                                        <option selected>Enter destination City</option>
+                                        <option value="1">Pune</option>
+                                        <option value="2">Delhi</option>
+                                        <option value="3">Bangluru</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 col-lg-2">
+                                    <input type="date" class="form-control" placeholder="" aria-label="date">
+                                </div>
+                                <div class="col-sm-6 col-lg-2">
+                                    <input type="date" class="form-control" placeholder="" aria-label="date">
+                                </div>
+                                <div class="col-sm--6 col-lg-2">
+                                    <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                                    <select class="form-select" id="autoSizingSelect">
+                                        <option selected>Passenger</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 col-lg-1">
+                                    <button type="button" class="btn btn-danger btn-rounded  ms-2"
+                                        id="searchbtn">Search</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                            tabindex="0">
+
+                            <!-- Hotel form -->
+
+                            <div class="row g-1 mt-2">
+                                <div class="col-sm-6 col-lg-2">
+                                    <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                                    <select class="form-select" id="autoSizingSelect">
+                                        <option selected>NO. of Person</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-sm-6 col-lg-2">
+                                    <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                                    <select class="form-select" id="autoSizingSelect">
+                                        <option selected>NO. of Rooms</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 col-lg-2">
+                                    <input type="date" class="form-control" placeholder="" aria-label="date">
+                                </div>
+                                <div class="col-sm-6 col-lg-2">
+                                    <input type="date" class="form-control" placeholder="" aria-label="date">
+                                </div>
+                                <div class="col-sm--6 col-lg-2">
+                                    <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                                    <select class="form-select" id="autoSizingSelect">
+                                        <option selected>No. of Bed</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 col-lg-1">
+                                    <button type="button" class="btn btn-danger btn-rounded  ms-2"
+                                        id="searchbtn">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"
+                            tabindex="0">
+
+                            <!-- car book form -->
+                            <div class="row g-1 mt-2">
+                                <div class="col-sm-6 col-lg-2">
+                                    <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                                    <select class="form-select" id="autoSizingSelect">
+                                        <option selected>Enter origin City</option>
+                                        <option value="1">Pune</option>
+                                        <option value="2">Delhi</option>
+                                        <option value="3">Bangluru</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-sm-6 col-lg-2">
+                                    <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                                    <select class="form-select" id="autoSizingSelect">
+                                        <option selected>Enter destination City</option>
+                                        <option value="1">Pune</option>
+                                        <option value="2">Delhi</option>
+                                        <option value="3">Bangluru</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 col-lg-2">
+                                    <input type="date" class="form-control" placeholder="" aria-label="date">
+                                </div>
+                                <div class="col-sm-6 col-lg-2">
+                                    <input type="date" class="form-control" placeholder="" aria-label="date">
+                                </div>
+                                <div class="col-sm--6 col-lg-2">
+                                    <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                                    <select class="form-select" id="autoSizingSelect">
+                                        <option selected>Passenger</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 col-lg-1">
+                                    <button type="button" class="btn btn-danger btn-rounded  ms-2"
+                                        id="searchbtn">Search</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner section end -->
+
+    <!-- fun section start -->
+    <section class="fun bg-dark py-5 text-white">
+        <div class="container">
+            <h3 class="text-center">SOME FUN WE COVERED</h3>
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-6 box">
+                    <div class="bg-dark p-3 my-2">
+                        <div class="text-center">
+                            <i class="fa-solid fa-person-biking fs-1 "></i><br><br>
+                            5670 M<br>
+                            CYCLING TRACK
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 box">
+                    <div class="bg-dark p-3 my-2 ">
+                        <div class="text-center">
+                            <i class="fa-solid fa-map-location-dot fs-1"></i><br><br>
+                            480 M<br>
+                            DISTANCE COVER
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 box">
+                    <div class="bg-dark p-3 my-2 ">
+                        <div class="text-center">
+                            <i class="fa-solid fa-person-digging fs-1"></i><br><br>
+                            5670 M<br>
+                            ALTILOK HIRED
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 box">
+                    <div class="bg-dark p-3 my-2 ">
+                        <div class="text-center">
+                            <i class="fa-solid fa-people-arrows fs-1"></i><br><br>
+                            180 KM<br>
+                            SAILING DISTANCE
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 box">
+                    <div class="bg-dark p-3 my-2 ">
+                        <div class="text-center">
+                            <i class="fa-solid fa-handshake-slash fs-1"></i><br><br>
+                            570 DAYS<br>
+                            SPENT ADVENTUR
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 box">
+                    <div class="bg-dark p-3 my-2 ">
+                        <div class="text-center">
+                            <i class="fa-solid fa-tachograph-digital fs-1"></i><br><br>
+                            567 M<br>
+                            JUGLE DISTANCE
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- fun section end -->
+
+    <!-- news letters start -->
+    <section class="news-letters py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-7 text-center text-white">
+                    <h3 class="fw-bold mt-5">SUBSCRIBE FOR OUR COVER NEWSLETTERS</h3>
+                    <P class="mt-5 mx-5">Join our community of our 300,000 global readers when receives emails read the
+                        news promotions and other good stuff from Adventures</P>
+                    <form action="">
+                        <input type="email" placeholder="Enter your email address..."
+                            class="w-50 p-1 opacity-50 text-light fs-6 ">
+                        <input type="submit" value="SEARCH" class="py-1 px-4 mx-2 text-center fs-6">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- news letters end -->
+    <!-- Destination start -->
+    <section class="destination py-5 bg-primary2">
+        <div class="container">
+            <div class="row mb-4">
+                <h3 class="fw-bold text-center text-white">POPULAR DESTINATION</h3>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-sm--6 col-12">
+                    <div class="card border-3 m-1">
+                        <img src="assets/images/image-1.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="fw-bold my-2">
+                                <span class="text-orange">$999</span>
+                                Rome, flowrence & Venice <br> 9-Night Vacation w/Air
+                            </p>
+                            <p>This is the lowest price we'hv seen in four years for a mine -night</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm--6 col-12">
+                    <div class="card border-3 m-1">
+                        <img src="assets/images/image-2.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="fw-bold my-2">
+                                <span class="text-orange">$1099</span>
+                                Austrailia,Sydney & Flu <br> Vacation w/Air save
+                                <span class="text-orange">
+                                    $350
+                                </span>
+                            </p>
+                            <p>This is the lowest price we'hv seen in four years for a mine -night</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm--6 col-12">
+                    <div class="card border-3 m-1">
+                        <img src="assets/images/image-3.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="fw-bold my-2">
+                                <span class="text-orange">$999</span>
+                                Greek Islands & Night <br> Vacation w/Air save
+                                <span class="text-orange">
+                                    $1000
+                                </span>
+                            </p>
+                            <p>This is the lowest price we'hv seen in four years for a mine -night</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm--6 col-12">
+                    <div class="card border-3 m-1">
+                        <img src="assets/images/image-4.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="fw-bold my-2">
+                                <span class="text-orange">$899</span>
+                                Ireland & Germany <br> 6-Night w/Air
+                            </p>
+                            <p>This is the lowest price we'hv seen in four years for a mine -night</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-sm--6 col-12">
+                    <div class="card border-3 m-1">
+                        <img src="assets/images/image-5.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="fw-bold my-2">
+                                <span class="text-orange">$999</span>
+                                Morrocco, Star & Venice <br> 9-Night Vacation w/Air
+                                <span class="text-orange">
+                                    $1150
+                                </span>
+                            </p>
+                            <p>This is the lowest price we'hv seen in four years for a mine -night</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm--6 col-12">
+                    <div class="card border-3 m-1">
+                        <img src="assets/images/image-6.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="fw-bold my-2">
+                                <span class="text-orange">$1699</span>
+                                Italy, flowrence & Venice <br> Gateway w/Air
+                                <span class="text-orange">
+                                    $1250
+                                </span>
+                            </p>
+                            <p>This is the lowest price we'hv seen in four years for a mine -night</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm--6 col-12">
+                    <div class="card border-3 m-1">
+                        <img src="assets/images/image-7.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="fw-bold my-2">
+                                <span class="text-orange">$1299</span>
+                                Newzeland make city<br> Trip Tours & Car Rental
+                            </p>
+                            <p>This is the lowest price we'hv seen in four years for a mine -night</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm--6 col-12">
+                    <div class="card border-3 m-1">
+                        <img src="assets/images/image-8.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="fw-bold my-2">
+                                <span class="text-orange">$1142</span>
+                                & up Turkey NL Trip <br> Golden Towns & Hotels
+                            </p>
+                            <p>This is the lowest price we'hv seen in four years for a mine -night</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- Destination end -->
+    <!-- Estimate start -->
+
+    <section class="estimate py-5 bg-primary position-relative">
+        <div class="position-absolute bottom-0 end-0">
+            <img src="assets/images/indiagate.jpg" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <h3 class="text-white fw-bold">GET A QUICK ESTIMATE!</h3>
+                <P class="text-white fw-bold fs-6">GET A PROFESSIONAL HELP</P>
+                <hr size="10px" style="width: 70px; color: #fff;">
+            </div>
+            <div class="row">
+                <form action="">
+                    <SELECT class="col-lg-2 col-sm-4 col-12 py-2">
+                        <option value="">Travel Purpose</option>
+                        <option value="">Travelling</option>
+                        <option value="">Travel</option>
+                    </SELECT>
+                    <input type="date" placeholder="Travel Date" class="col-lg-2 col-sm-4 col-12 py-2">
+                    <SELECT class="col-lg-2 col-sm-4 col-12 py-2">
+                        <option value="">Number of People</option>
+                        <option value="">Travel</option>
+                        <option value="">Travel</option>
+                    </SELECT>
+                    <input type="email" placeholder="Your Email" class="col-lg-2 col-sm-4 col-12 py-2">
+                    <input type="button" value="CALCULATE NOW" class="col-lg-2 col-sm-4 col-12 py-2 bg-warning fw-bold">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Estimate end -->
+    <!-- blog start -->
+    <section class="blog py-5">
+        <div class="container">
+            <div class="row">
+                <h3 class="fw-bold text-center">LATEST BLOG</h3>
+                <P class="fw-bold text-center col-md-8 offset-md-2">The travel blog of Nomadic Matt features tips and
+                    advice on how you can travel better, cheaper, and smarter so you can explore the world on a budget.!
+                </P>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="assets/images/blog2.jpeg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-sm-8">
+                            <p>Feb 01 2022<br>
+                                <span class="fw-bold">10 THINGS TODO BEFORE TRAVEL </span>
+                            </p>
+                            <hr>
+                            <p> If you travel on a budget, the Tales of Backpacker is the blog you have to read. It is
+                                written by Claire, an experienced travele</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="assets/images/blog2.jpeg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-sm-8">
+                            <p>Feb 01 2022<br>
+                                <span class="fw-bold">SAY NO TO LAZY LIFE </span>
+                            </p>
+                            <hr>
+                            <p> If you travel on a budget, the Tales of Backpacker is the blog you have to read. It is
+                                written by Claire, an experienced travele</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- blog end -->
+
+    <!-- footer start -->
+    <footer class="bg-dark bg-opacity-90 py-5">
+        <div class="container text-white">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <h4>Top Countries</h4>
+                    <p class="text-secondary">
+                        <i class="fa-solid fa-plane-departure"></i> &nbsp;Flight to
+                        <a href="javascript:void()" class="text-white text-decoration-none">United States</a>
+                    </p>
+                    <p class="text-secondary">
+                        <i class="fa-solid fa-plane-departure"></i> &nbsp;Flight to
+                        <a href="javascript:void()" class="text-white text-decoration-none">United Kingdom</a>
+                    </p>
+                    <p class="text-secondary">
+                        <i class="fa-solid fa-plane-departure"></i> &nbsp;Flight to
+                        <a href="javascript:void()" class="text-white text-decoration-none">Spain</a>
+                    </p>
+                    <p class="text-secondary">
+                        <i class="fa-solid fa-plane-departure"></i> &nbsp;Flight to
+                        <a href="javascript:void()" class="text-white text-decoration-none">Thailand</a>
+                    </p>
+                    <p class="text-secondary">
+                        <i class="fa-solid fa-plane-departure"></i> &nbsp;Flight to
+                        <a href="javascript:void()" class="text-white text-decoration-none">India</a>
+                    </p>
+                    <p class="text-secondary">
+                        <i class="fa-solid fa-plane-departure"></i> &nbsp;Flight to
+                        <a href="javascript:void()" class="text-white text-decoration-none">Italy</a>
+                    </p>
+                    <p class="text-secondary">
+                        <i class="fa-solid fa-plane-departure"></i> &nbsp;Flight to
+                        <a href="javascript:void()" class="text-white text-decoration-none">Germany</a>
+                    </p>
+                    <p class="text-secondary">
+                        <i class="fa-solid fa-plane-departure"></i> &nbsp;Flight to
+                        <a href="javascript:void()" class="text-white text-decoration-none">Denmark</a>
+                    </p>
+                    <p class="text-secondary">
+                        <i class="fa-solid fa-plane-departure"></i> &nbsp;Flight to
+                        <a href="javascript:void()" class="text-white text-decoration-none">France</a>
+                    </p>
+                    <p class="text-secondary">
+                        <i class="fa-solid fa-plane-departure"></i> &nbsp;Flight to
+                        <a href="javascript:void()" class="text-white text-decoration-none">Australia</a>
+                    </p>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h4>Top Cities</h4>
+                    <p class="text-secondary">
+                        <i class="fa-solid fa-location-dot"></i> &nbsp;Flight to
+                        <a href="javascript:void()" class="text-white text-decoration-none">London</a>
+                        United Kingdom
+                    </p>
+                    <p class="text-secondary">
+                        <i class="fa-solid fa-location-dot"></i> &nbsp;Flight to
+                        <a href="javascript:void()" class="text-white text-decoration-none">New York</a>
+                        United States
+                    </p>
+                    <p class="text-secondary">
+                        <i class="fa-solid fa-location-dot"></i> &nbsp;Flight to
+                        <a href="javascript:void()" class="text-white text-decoration-none">Bankok</a>
+                        Thailand
+                    </p>
+                    <p class="text-secondary">
+                        <i class="fa-solid fa-location-dot"></i> &nbsp;Flight to
+                        <a href="javascript:void()" class="text-white text-decoration-none">Netherland</a>
+                        Denmark
+                    </p>
+                    <p class="text-secondary">
+                        <i class="fa-solid fa-location-dot"></i> &nbsp;Flight to
+                        <a href="javascript:void()" class="text-white text-decoration-none">London</a>
+                        United States
+                    </p>
+                    <p class="text-secondary">
+                        <i class="fa-solid fa-location-dot"></i> &nbsp;Flight to
+                        <a href="javascript:void()" class="text-white text-decoration-none">Paris</a>
+                        France
+                    </p>
+                    <p class="text-secondary">
+                        <i class="fa-solid fa-location-dot"></i> &nbsp;Flight to
+                        <a href="javascript:void()" class="text-white text-decoration-none">Dubai</a>
+                        UAE
+                    </p>
+                    <p class="text-secondary">
+                        <i class="fa-solid fa-location-dot"></i> &nbsp;Flight to
+                        <a href="javascript:void()" class="text-white text-decoration-none">Singapore</a>
+                        Singapore
+                    </p>
+                    <p class="text-secondary">
+                        <i class="fa-solid fa-location-dot"></i> &nbsp;Flight to
+                        <a href="javascript:void()" class="text-white text-decoration-none">London</a>
+                        Turkey
+                    </p>
+                    <p class="text-secondary">
+                        <i class="fa-solid fa-location-dot"></i> &nbsp;Flight to
+                        <a href="javascript:void()" class="text-white text-decoration-none">Hong Kong</a>
+                        Hong kong
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <h4>International Sites</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="text-secondary">
+                                <img src="assets/images/IMG-20231012-WA0001.jpg" width="20px" alt=""> &nbsp;
+                                Skyscanner
+                            </p>
+                            <p class="text-secondary">
+                                <img src="assets/images/IMG-20231012-WA0001.jpg" width="20px" alt=""> &nbsp;
+                                Cheap Flights
+                            </p>
+                            <p class="text-secondary">
+                                <img src="assets/images/IMG-20231012-WA0001.jpg" width="20px" alt=""> &nbsp;
+                                Flights
+                            </p>
+                            <p class="text-secondary">
+                                <img src="assets/images/IMG-20231012-WA0001.jpg" width="20px" alt=""> &nbsp;
+                                Cheap Flight
+                            </p>
+                            <p class="text-secondary">
+                                <img src="assets/images/IMG-20231012-WA0001.jpg" width="20px" alt=""> &nbsp;
+                                RyanAir
+                            </p>
+                            <p class="text-secondary">
+                                <img src="assets/images/IMG-20231012-WA0001.jpg" width="20px" alt=""> &nbsp;
+                                Trip Tuner
+                            </p>
+                            <p class="text-secondary">
+                                <img src="assets/images/IMG-20231012-WA0001.jpg" width="20px" alt=""> &nbsp;
+                                Easyjet
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-secondary">
+                                <img src="assets/images/IMG-20231012-WA0001.jpg" width="20px" alt=""> &nbsp;
+                                Very low cost
+                            </p>
+                            <p class="text-secondary">
+                                <img src="assets/images/IMG-20231012-WA0001.jpg" width="20px" alt=""> &nbsp;
+                                Priceline
+                            </p>
+                            <p class="text-secondary">
+                                <img src="assets/images/IMG-20231012-WA0001.jpg" width="20px" alt=""> &nbsp;
+                                AirFareWatchDog
+                            </p>
+                            <p class="text-secondary">
+                                <img src="assets/images/IMG-20231012-WA0001.jpg" width="20px" alt=""> &nbsp;
+                                Trip Advisor
+                            </p>
+                            <p class="text-secondary">
+                                <img src="assets/images/IMG-20231012-WA0001.jpg" width="20px" alt=""> &nbsp;
+                                Agoda
+                            </p>
+                            <p class="text-secondary">
+                                <img src="assets/images/IMG-20231012-WA0001.jpg" width="20px" alt=""> &nbsp;
+                                Airbnb
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="row py-2">
+                    <div class="col-lg-10">
+                        <p class="text-secondary">
+                            <img src="assets/images/foot1.png" width="40px" alt="">
+                        <a href="" class="link-secondary text-decoration-none mx-2 fw-bold">About Us</a>
+                        <a href="" class="link-secondary text-decoration-none mx-2 fw-bold">jobs</a>
+                        <a href="" class="link-secondary text-decoration-none mx-2 fw-bold">Press</a>
+                        <a href="" class="link-secondary text-decoration-none mx-2 fw-bold">Affiliate</a>
+                        <a href="" class="link-secondary text-decoration-none mx-2 fw-bold">Terms of use</a>
+                        <a href="" class="link-secondary text-decoration-none mx-2 fw-bold">Privacy Policy</a>
+                        <a href="" class="link-secondary text-decoration-none mx-2 fw-bold">Cookies</a>
+                        <a href="" class="link-secondary text-decoration-none mx-2 fw-bold">Airlines</a>
+                        <a href="" class="link-secondary text-decoration-none mx-2 fw-bold">Apps</a>
+                        <a href="" class="link-secondary text-decoration-none mx-2 fw-bold">Help</a>
+                        </p>
+                       
+                    </div>
+                    <div class="col-lg-2">
+                        <i class="fa-brands fa-square-twitter"></i>
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-google"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- footer end -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+</body>
+
+</html>
