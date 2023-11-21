@@ -13,7 +13,7 @@
   top: 20%;
 }
 
-.nav-item .nav-link:hover{
+.nav-item .nav-link:hover {
   background-color: #DC3545;
   color: #fff;
   cursor: pointer;
@@ -53,7 +53,7 @@
 }
 
 .box:hover {
-  transform: scale(1.15);
+  transform: scale(.80);
   background-color: #DC3545;
   cursor: pointer;
 }
@@ -139,50 +139,50 @@ hr {
 
 /* estimate start */
 
-@media screen and (max-width:576px){
- .estimate img{
+@media screen and (max-width:576px) {
+  .estimate img {
     display: none;
   }
- 
+
 }
+
 /* estimate end */
 
 /* blog start */
-@media screen and (max-width:576px){
-    .blog hr{
-      width: 50%;
-      margin-left: 25%;
-      margin-right: 25%;
-    }
+@media screen and (max-width:576px) {
+  .blog hr {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
 
-    .blog p{
-      text-align: center;
-      margin-top: 20px;
-    }
+  .blog p {
+    text-align: center;
+    margin-top: 20px;
+  }
 }
+
 /* blog end */
 
 /* footer start */
-@media screen and (max-width:767px){
-  footer p{
+@media screen and (max-width:767px) {
+  footer p {
     margin-left: 25%;
     margin-top: 20px;
   }
 
-  footer h4{
+  footer h4 {
     margin: 20px 25%;
     text-align: center;
   }
 
-  .icon{
+  .icon {
     text-align: center;
     font-size: 25px;
   }
-  
- }
- 
- @media screen and (max-width:576px){
-  
-  
- }
+
+}
+
+@media screen and (max-width:576px) {}
+
 /* footer end */
